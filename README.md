@@ -2,6 +2,10 @@
 
 This repo has a terraform main file to create a minimalistic EKS cluster in AWS
 
+# Need to install:
+aws cli
+terraform
+
 ## To use ##
 
 * Create below managed(not inline) policies in AWS IAM pplicy tab
