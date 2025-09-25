@@ -6,6 +6,20 @@ This repo has a terraform main file to create a minimalistic EKS cluster in AWS
 aws cli
 terraform
 
+# Important notes:
+
+1. EKS requires at least two subnets in different Availability Zones (AZs) for high availability
+2. Internet Gateway access is provided for EKS nodes inside subnets can communicate with external services such as pulling images from image hubs like docker hub, communicate with AWS API
+3. user_local_terminal user login with aws cli
+
+# Commands:
+
+terraform init
+terraform plan
+terraform apply
+terraform destroy
+
+
 ## To use ##
 
 * Create below managed(not inline) policies in AWS IAM pplicy tab
